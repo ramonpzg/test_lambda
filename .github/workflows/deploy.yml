@@ -20,4 +20,5 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt -t .; fi
       - name: Zippit
         run: |
+          zip -r python.zip *
           ls
