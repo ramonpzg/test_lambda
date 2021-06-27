@@ -1,0 +1,13 @@
+name: lambda deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v2
+
